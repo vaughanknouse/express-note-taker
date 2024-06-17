@@ -15,8 +15,8 @@
   - [Usage](#usage)
     - [Screenshots: \*\*\*](#screenshots-)
   - [Link to Deployed Application \*\*\*](#link-to-deployed-application-)
-  - [Credits \*\*\*\*](#credits-)
-  - [Test Instructions](#test-instructions)
+  - [Credits \*\*\*](#credits-)
+  - [Test Instructions \*\*\*](#test-instructions-)
   - [License](#license)
   - [Questions](#questions)
 
@@ -86,7 +86,7 @@ The following screenshots demonstrate the application's functionality and appear
 ## Link to Deployed Application ***
 
 
-## Credits ****
+## Credits ***
 Used the following sources as tutorials and guidelines:
 
 Full-Stack Blog Render Deployment Guide: https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide
@@ -95,7 +95,7 @@ Also utilized the Xpert Learning Assistant for some portions of my code:
 https://bootcampspot.instructure.com/courses/5293/external_tools/313
 
 
-## Test Instructions
+## Test Instructions ***
 No tests were performed with this code.
 
 
