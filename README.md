@@ -9,20 +9,21 @@
 - [Express.js Note Taker](#expressjs-note-taker)
   - [Description \*\*\*](#description-)
   - [Table of Contents](#table-of-contents)
-  - [User Story](#user-story)
+  - [User Stor](#user-stor)
   - [Acceptance Criteria](#acceptance-criteria)
+  - [Technologies Used \*\*\*](#technologies-used-)
+  - [Features \*\*\*](#features-)
   - [Installation \*\*\*](#installation-)
   - [Usage](#usage)
     - [Screenshots: \*\*\*](#screenshots-)
-  - [Link to Deployed Application \*\*\*](#link-to-deployed-application-)
+  - [Tests](#tests)
+  - [Links \*\*\*](#links-)
   - [Credits \*\*\*](#credits-)
-  - [Test Instructions \*\*\*](#test-instructions-)
   - [License](#license)
   - [Questions](#questions)
 
 
-## User Story
-
+## User Stor
 ```md
 AS A small business owner
 I WANT to be able to write and save notes
@@ -30,7 +31,6 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
 
 ## Acceptance Criteria
-
 ```md
 GIVEN a note-taking application
 WHEN I open the Note Taker
@@ -47,13 +47,18 @@ WHEN I click on the "New Note" button in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
 ```
 
+## Technologies Used ***
+
+
+## Features ***
+
+
 ## Installation ***
 To install the Express.js Note Taker, follow the following steps:
 1.	Clone the repository to your local machine: `git clone https://github.com/vaughanknouse/express-note-taker.git`.
 2.	Ensure that the current version of Node.js is installed. 
 3.	Open the cloned repository in a CLI, such as Visual Studio (VS) Code.
 4.	Navigate to the project directory in your terminal.
-
 
 EDITS HERE***
 5.	Initialize a project with `package.json` by typing `npm init -y` in the terminal where project files will be stored.
@@ -75,15 +80,24 @@ EDITS HERE***
 7. Regarding future use, you may alter the prompted questions within the `index.js` file to best suit your needs. 
 8. For unit testing instructions, navigate to the "Test Instructions" section of the README. 
 
-
 ### Screenshots: ***
 The following screenshots demonstrate the application's functionality and appearance:
 
-![Shows screenshot of the prompts made to the user via the inquirer command line interface.](assets/images/user-input-screenshot.png)
+Landing page with link to notes page:
+![Shows screenshot of the landing page with a clickable link to the notes page.](assets/images/landing-page-screenshot.png)
 
+Notes page with existing notes:
 ![Shows screenshot of an example  logo generated via the application.](assets/images/generated-logo-screenshot.png)
 
-## Link to Deployed Application ***
+
+## Tests
+There is no unit testing written for this application.
+
+
+## Links ***
+Repository: https://github.com/vaughanknouse/express-note-taker
+
+Deployed Application to Render: ***
 
 
 ## Credits ***
@@ -91,12 +105,10 @@ Used the following sources as tutorials and guidelines:
 
 Full-Stack Blog Render Deployment Guide: https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide
 
+Render Docs - How Deploys Work: https://docs.render.com/deploys 
+
 Also utilized the Xpert Learning Assistant for some portions of my code:
 https://bootcampspot.instructure.com/courses/5293/external_tools/313
-
-
-## Test Instructions ***
-No tests were performed with this code.
 
 
 ## License
@@ -105,4 +117,5 @@ This project is licensed under the MIT license. For more information, please vis
 
 ## Questions
 For any questions or feedback, please contact me via email at vaughanknouse@gmail.com.
+
 Additionally, you can find me on GitHub at [vaughanknouse](https://github.com/vaughanknouse).
