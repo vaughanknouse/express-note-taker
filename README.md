@@ -53,7 +53,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 -	JavaScript
 -	Node.js
 -	Express.js 
--	NPM
+-	NPM packages
 -	JSON for data storage and retrieval 
 -	Render to host the application
 
@@ -72,8 +72,8 @@ To install the Express.js Note Taker, follow the following steps:
 3.	Open the cloned repository in a CLI, such as Visual Studio (VS) Code.
 4.	Navigate to the project directory in your terminal.
 5.	Initialize a project with `package.json` by typing `npm init -y` in the terminal where project files will be stored.
-6.	Install the dependency packages associated with this application by typing `npm i` in the command line to ensure that the `node-modules` folder is operating on your local device. 
-7. If needed. install Express manually so it can be used within the node terminal by typing `npm i express` in the terminal.
+6.	Install the dependency packages associated with this application by typing `npm i` in the command line to ensure that the `node-modules` folder is operating on your local device.
+7. If needed, you can install the Express and uuid dependency packages manually by typing `npm i express` and `npm i uuid` so they can be used within the node terminal.
 8. To run the server, within the terminal, type the command `npm start` or `node server.js`.
 
 
