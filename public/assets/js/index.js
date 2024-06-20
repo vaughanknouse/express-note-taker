@@ -55,17 +55,17 @@ const deleteNote = (id) =>
   });
 
 const renderActiveNote = () => {
-  hide(saveNoteBtn);
-  hide(clearBtn);
+  if (saveNoteBtn) hide(saveNoteBtn);
+  if (clearBtn) hide(clearBtn);
 
   if (activeNote.id) {
-    show(newNoteBtn);
+    if (newNoteBtn) show(newNoteBtn);
     noteTitle.setAttribute('readonly', true);
     noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
     noteText.value = activeNote.text;
   } else {
-    hide(newNoteBtn);
+    if (newNoteBtn) hide(newNoteBtn);
     noteTitle.removeAttribute('readonly');
     noteText.removeAttribute('readonly');
     noteTitle.value = '';
@@ -112,19 +112,19 @@ const handleNoteView = (e) => {
 // Sets the activeNote to an empty object and allows the user to enter a new note
 const handleNewNoteView = (e) => {
   activeNote = {};
-  show(clearBtn);
+  if (clearBtn) show(clearBtn);
   renderActiveNote();
 };
 
 // Renders the appropriate buttons based on the state of the form
 const handleRenderBtns = () => {
-  show(clearBtn);
+  if (clearBtn) show(clearBtn);
   if (!noteTitle.value.trim() && !noteText.value.trim()) {
-    hide(clearBtn);
+    if (clearBtn) hide(clearBtn);
   } else if (!noteTitle.value.trim() || !noteText.value.trim()) {
-    hide(saveNoteBtn);
+    if (saveNoteBtn) hide(saveNoteBtn);
   } else {
-    show(saveNoteBtn);
+    if (saveNoteBtn) show(saveNoteBtn);
   }
 };
 
@@ -186,10 +186,10 @@ const renderNoteList = async (notes) => {
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
 if (window.location.pathname === '/notes') {
-  saveNoteBtn.addEventListener('click', handleNoteSave);
-  newNoteBtn.addEventListener('click', handleNewNoteView);
-  clearBtn.addEventListener('click', renderActiveNote);
-  noteForm.addEventListener('input', handleRenderBtns);
-};
+  if (saveNoteBtn) saveNoteBtn.addEventListener('click', handleNoteSave);
+  if (newNoteBtn) newNoteBtn.addEventListener('click', handleNewNoteView);
+  if (clearBtn) clearBtn.addEventListener('click', renderActiveNote);
+  if (noteForm) noteForm.addEventListener('input', handleRenderBtns);
+}
 
 getAndRenderNotes();
