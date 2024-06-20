@@ -15,9 +15,9 @@
   - [Features](#features)
   - [Installation](#installation)
   - [Usage](#usage)
-    - [Screenshots: \*\*\*](#screenshots-)
+    - [Screenshots:](#screenshots)
   - [Tests](#tests)
-  - [Links \*\*\*](#links-)
+  - [Links](#links)
   - [Credits](#credits)
   - [License](#license)
   - [Questions](#questions)
@@ -93,7 +93,7 @@ To use the Express.js Note Taker, follow the following steps:
 8. **Bonus Feature - Deleting a Note**: You can delete a saved note by clicking on the trash can icon associated with the specific note that you want to remove.
    
 
-### Screenshots: ***
+### Screenshots:
 The following screenshots demonstrate the application's functionality and appearance:
 
 Landing page with link to Notes page:
@@ -112,10 +112,10 @@ Notes page with existing notes and "New Note" button at in the navigation at the
 There is no unit testing written for this application.
 
 
-## Links ***
+## Links
 Repository: https://github.com/vaughanknouse/express-note-taker
 
-Deployed Application to Render: ***
+Deployed Application to Render: https://express-note-taker-ez2m.onrender.com
 
 
 ## Credits
