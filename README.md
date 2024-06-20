@@ -88,7 +88,7 @@ To use the Express.js Note Taker, follow the following steps:
    - The "Save Note" and "Clear Form" buttons in the navigation will disappear once the new note is saved.
 6. **View Existing Note Details:** To view the details of a saved existing note, click on the note's title from the list in the left-hand side of the page. The saved note's contents will then appear in the right-hand column of the page.
    - A "New Note" button will appear in the navigation at the top right of the page. 
-7. To create another new note, click on the "New Note" button in the navigation at the top of the page. This will clear the fields in the right-hand column, allowing you to enter a new title and text for your note.
+7. **Create Another New Note:** To create another new note, click on the "New Note" button in the navigation at the top of the page. This will clear the fields in the right-hand column, allowing you to enter a new title and text for your note.
      - The "New Note" button will then disappear once this new additional note is created.
 8. **Bonus Feature - Deleting a Note**: You can delete a saved note by clicking on the trash can icon associated with the specific note that you want to remove.
    
