@@ -35,14 +35,14 @@ notes.post('/', (req, res) => {
     });
 
 // DELETE Route for deleting an existing note
-router.delete('/:id', (req, res) => {
+notes.delete('/:id', (req, res) => {
   let data = fs.readFileSync('db/db.json', 'utf8');
   const dataJSON =  JSON.parse(data);
   const newNotes = dataJSON.filter((note) => { 
     return note.id !== req.params.id;
   });
   fs.writeFileSync('db/db.json',JSON.stringify(newNotes));
-  res.json('Note deleted.');
+  res.json('Note has been deleted.');
 });
 
 // Exporting router for use in other files
