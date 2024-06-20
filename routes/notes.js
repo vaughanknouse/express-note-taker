@@ -3,7 +3,7 @@ const notes = require('express').Router();
 // Destructure the 'uuidv4' module so we can add individual id's for each note
 const { v4: uuidv4 } = require('uuid');
 // Importing file system utility functions
-const { readFromFile, readAndAppend, writeToFile } = require('../helpers/fsUtils');
+const { readFromFile, readAndAppend, writeToFile, readAndDelete } = require('../helpers/fsUtils');
 
 // GET Route for retrieving all notes
 notes.get('/', (req, res) => {
@@ -36,13 +36,8 @@ notes.post('/', (req, res) => {
 
 // DELETE Route for deleting an existing note
 notes.delete('/:id', (req, res) => {
-  let data = fs.readFileSync('db/db.json', 'utf8');
-  const dataJSON =  JSON.parse(data);
-  const newNotes = dataJSON.filter((note) => { 
-    return note.id !== req.params.id;
-  });
-  fs.writeFileSync('db/db.json',JSON.stringify(newNotes));
-  res.json('Note has been deleted.');
+  readAndDelete(req.params.id, "./db/db.json"); // Deleting note from file
+  res.json('response'); // Sending response
 });
 
 // Exporting router for use in other files

@@ -32,4 +32,19 @@ const readAndAppend = (content, file) => {
   });
 };
 
-module.exports = { readFromFile, writeToFile, readAndAppend };
+// Function to read from a file, delete content by idToDelete, and write back to the file
+const readAndDelete = (id, file) => {
+  fs.readFile(file, "utf8", (err, data) => {
+    // Reading from the file
+    if (err) {
+      console.error(err); // Logging error if encountered
+    } else {
+      let parsedData = JSON.parse(data); // Parsing the existing data as JSON
+      parsedData = parsedData.filter((note) => note.id !== id); // Filtering out the content with the specified id
+      writeToFile(file, parsedData); // Writing updated content back to the file
+    }
+  });
+};
+
+
+module.exports = { readFromFile, writeToFile, readAndAppend, readAndDelete };
