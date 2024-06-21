@@ -2,12 +2,17 @@
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Description ***
+## Description
+Many users often struggle with managing scattered and disorganized notes. While there are existing solutions, they often either lack essential features or are overly complicated. Thus, it is often difficult for users to find a straightforward, efficient, and reliable note-taking solution that addresses the core needs of users to manage personal and professional notes without unnecessary complexity. To address this issue, this week’s UT Austin Coding Boot Camp challenge involved modifying starter code to create a robust, web-based note management system called Note Taker. This application was built to provide a simple, accessible, and efficient way for users, particularly small business owners, to write, save, and delete notes to help organize their thoughts and keep track of tasks they need to complete.
+ 
+The Note Taker application is a web-based application that consists of a front end, built using HTML, CSS, and JavaScript, that connects to an Express.js back end, in order to provide a simple and efficient way to manage personal and professional notes. Built on the Express.js framework for Node.js, this application offers a robust back end server that handles data storage and retrieval through a JSON file using unique IDs. In this challenge, we were responsible for connecting the back end to the already created front end through the use of requests within Express and setting up routes in the Express.js server to handle these requests. Leveraging JSON for data storage and exchange allows users to write and save new notes as well as view and delete existing notes if needed. Finally, the application was deployed to a live URL via Render for accessibility. The combination of these technologies to build this application creates a user-friendly and efficient note-taking application, with a back end handling data management and a front end offering a seamless user experience allowing for notes to be easily accessible and organized in one place. 
+ 
+The motivation for building the Express.js Note Taker application stemmed from a desire to streamline the process of organizing and managing personal and professional tasks and notes efficiently. Since keeping track of notes and tasks is crucial for productivity in today's fast-paced world, creating a tool to assist in this process was essential. By providing a user-friendly interface for note taking and storage, the Express.js Note Taker application helps to enhance productivity and organization for users, such as small business owners, who need a reliable and convenient solution for managing their notes efficiently.
 
 
 ## Table of Contents
 - [Express.js Note Taker](#expressjs-note-taker)
-  - [Description \*\*\*](#description-)
+  - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [User Stor](#user-stor)
   - [Acceptance Criteria](#acceptance-criteria)
@@ -79,7 +84,7 @@ To install the Express.js Note Taker, follow the following steps:
 
 ## Usage
 To use the Express.js Note Taker, follow the following steps:
-1. **Open the Application:** Once your local server is running, the front end of the application can be accessed either directly from the command line by navigating to the link http://localhost:3001 or by clicking the deployed link hosted on Render seen in the "Links" section.
+1. **Open the Application:** Once your local server is running, the front end of the application can be accessed either directly from the command line by navigating to the link http://localhost:3001 or by clicking the deployed link (https://express-note-taker-ez2m.onrender.com) hosted on Render seen in the "Links" section.
 2. **Landing Page/Navigate to Notes Page:** When the application opens, click "Get Started" on the landing page to open the Note Taker on the notes page.
 3. **Existing Notes:** On the notes page, you will see a list of existing notes displayed in the left-hand column.
 4. **Create a New Note:** To create a new note, fil in the empty fields in the right-hand column. Enter a title for your note in the  "Note Title" field and the content of your note in the "Note Text" field.
@@ -113,7 +118,7 @@ There is no unit testing written for this application.
 
 
 ## Links
-Repository: https://github.com/vaughanknouse/express-note-taker
+GitHub Repository: https://github.com/vaughanknouse/express-note-taker
 
 Deployed Application to Render: https://express-note-taker-ez2m.onrender.com
 
